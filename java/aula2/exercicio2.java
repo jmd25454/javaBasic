@@ -9,7 +9,7 @@ public class exercicio2 {
 
   int n = 0;
 
-  while(n < 5){
+  do {
 
     System.out.println("\n");
 
@@ -25,6 +25,8 @@ public class exercicio2 {
     System.out.println("Digite a nota 2: ");
     double nota2 = scan.nextInt();
 
+    scan.nextLine();
+
     double notaFinal = (nota1 + nota2) / 2;
 
     if((nota1 + nota2)/2 >= 6)
@@ -34,7 +36,7 @@ public class exercicio2 {
     n++;
 
     System.out.println("\n");
-  }
+  }while (n < 5);
 
   System.out.println("O sistema terminou!! Obrigado por usar nosso app.");
 
